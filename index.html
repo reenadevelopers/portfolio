@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Reena Developers — Portfolio</title>
+
+  <!-- Google Font + Font Awesome -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header / Navbar -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#home" class="logo">Reena <span>Developers</span></a>
+
+      <nav class="nav" aria-label="Main Navigation">
+        <ul class="nav-list" id="nav-list">
+          <li><a class="nav-link" href="#home">Home</a></li>
+          <li><a class="nav-link" href="#about">About</a></li>
+          <li><a class="nav-link" href="#skills">Skills</a></li>
+          <li><a class="nav-link" href="#education">Education</a></li>
+          <li><a class="nav-link" href="#projects">Projects</a></li>
+        </ul>
+      </nav>
+
+      <button id="hamburger" class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span class="bar bar1"></span>
+        <span class="bar bar2"></span>
+        <span class="bar bar3"></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-left">
+          <h1 class="hero-title">Hello, this is <span class="accent">Reena Sahani</span></h1>
+          <p class="hero-sub">I am a <span id="role-typed" class="role-typed">Web Developer</span></p>
+          <p class="hero-lead">I build responsive, accessible and delightful web experiences using HTML, CSS and JavaScript.</p>
+
+          <div class="hero-ctas">
+            <a class="btn primary" href="#contact"><i class="fa-regular fa-envelope"></i> Contact Me</a>
+            <a class="btn outline" href="assets/resume.pdf" download><i class="fa-solid fa-download"></i> Get My Resume</a>
+          </div>
+
+          <div class="socials neon-floating" aria-label="Social links">
+            <a href="https://linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <div class="profile-frame">
+            <img src="reena.jpg"
+                 alt="Reena Sahani" class="profile-img">
+            <div class="profile-badge">
+              <h3>Reena Devi</h3>
+              <p>Web Developer</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Coders Card (JS block with typing) -->
+    <section class="section coders-section">
+      <div class="container">
+        <h2 class="section-title">Coder Details</h2>
+        <div class="code-wrap neon-card" id="code-wrap">
+          <pre id="code-pre" class="code-block"></pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section about-section">
+      <div class="container about-grid">
+        <div class="about-photo reveal">
+          <img src="reena.jpg" alt="Reena profile">
+        </div>
+        <div class="about-content reveal">
+          <h2>Who am I?</h2>
+          <p>I'm <strong>Reena Sahani</strong>, a passionate web developer focused on creating responsive and accessible web apps. I enjoy problem solving, learning new tools, and shipping pixel-perfect UI.</p>
+
+          <h4>Quick bio</h4>
+          <p>Graduated with BSc IT. Experienced with front-end fundamentals and interested in building full-stack projects.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section skills-section">
+      <div class="container">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-grid">
+          <!-- icons from devicon CDN (svg) -->
+          <div class="skill-card reveal">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
+            <p>HTML5</p>
+          </div>
+          <div class="skill-card reveal">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
+            <p>CSS3</p>
+          </div>
+          <div class="skill-card reveal">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+            <p>JavaScript</p>
+          </div>
+          <div class="skill-card reveal">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP">
+            <p>PHP</p>
+          </div>
+          <div class="skill-card reveal">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">
+            <p>MySQL</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="section education-section">
+      <div class="container">
+        <h2 class="section-title">Education</h2>
+        <div class="edu-grid">
+          <article class="edu-card reveal">
+            <h3>SSC (10th)</h3>
+            <p><strong>School:</strong> National English High School</p>
+            <p><strong>Year:</strong> 2020</p>
+            <p><strong>Percentage:</strong> 81%</p>
+            <p><strong>Learned:</strong> Basics of Maths, Science, and Computer awareness.</p>
+          </article>
+
+          <article class="edu-card reveal">
+            <h3>HSC (12th)</h3>
+            <p><strong>College:</strong> Nagindas Khandwala College</p>
+            <p><strong>Year:</strong> 2022</p>
+            <p><strong>Percentage:</strong> 70%</p>
+            <p><strong>Learned:</strong> Physics, Mathematics, programming basics & logical thinking.</p>
+          </article>
+
+          <article class="edu-card reveal">
+            <h3>BSc IT</h3>
+            <p><strong>University:</strong> Mumbai University</p>
+            <p><strong>Year:</strong> 2025</p>
+            <p><strong>Percentage:</strong> 82%</p>
+            <p><strong>Learned:</strong> Web Development, DBMS, Networking, Software Engineering.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section projects-section">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-grid">
+          <article class="project-card reveal">
+            <img src="portfolio.jpg" alt="Project 1">
+            <div class="project-info">
+              <h3>Portfolio Website</h3>
+              <p>Responsive portfolio with neon theme, built with HTML/CSS/JS.</p>
+              <a class="btn small" href="#" target="_blank">View Project</a>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <img src="inventory.jpg" alt="Project 2">
+            <div class="project-info">
+              <h3>Inventory Manager</h3>
+              <p>CRUD app demo using Node/Express & a simple UI.</p>
+              <a class="btn small" href="#" target="_blank">View Project</a>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <img src="/ecommerce(1).jpg" alt="Project 3">
+            <div class="project-info">
+              <h3>E-commerce UI</h3>
+              <p>Responsive e-commerce mockup with product cards and filters.</p>
+              <a class="btn small" href="#" target="_blank">View Project</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact minimal -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <p>If you'd like to work together, email me at <a href="mailto:youremail@example.com">reenarsahani0@gmail.com</a></p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2025 Reena Developers</p>
+      <div class="footer-socials">
+        <a href="https://github.com/" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://linkedin.com/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
